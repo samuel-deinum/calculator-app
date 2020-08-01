@@ -22,3 +22,9 @@ test("Build Arrays with Decimal", () => {
   expect(expression.numbers).toEqual([1.1, 2]);
   expect(expression.operators).toEqual(["+"]);
 });
+
+test("Solve Simple Addition", () => {
+  const expression = new Expression("1+1");
+  const result = expression.solve();
+  expect(result).toBe(2);
+});
