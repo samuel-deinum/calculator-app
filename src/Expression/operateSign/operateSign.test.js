@@ -23,3 +23,11 @@ test("6/2", () => {
 test("5/2", () => {
   expect(operateSign["/"](5, 2)).toBe(2.5);
 });
+
+test("Square Root", () => {
+  expect(operateSign["√"](9)).toBe(3);
+});
+
+test("Power", () => {
+  expect(operateSign["^"](3, 3)).toBe(27);
+});
